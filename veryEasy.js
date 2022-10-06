@@ -59,3 +59,38 @@ console.log('Return the First Element in an Array')
 function getFirstValue(arr) {
 	return arr[0]
 }
+
+//day 3
+function nameString(name){
+	let b = "Edabit"
+	return name + b
+}
+
+function giveMeSomething(a) {
+	return "something " + a
+}
+
+function calcAge(age) {
+	return age * 365
+}
+
+function convert(minutes) {
+	return minutes * 60
+}
+
+function printArray(number) {
+	const newArray = [];
+	for(let i = 1; i <= number; i++) {
+	newArray.push(i);
+		console.log(newArray)
+	}
+	return newArray;
+}
+
+function lessThan100(a, b) {
+	if (a + b < 100){
+		return true
+	} else {
+		return false
+	}
+}
