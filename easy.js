@@ -52,3 +52,38 @@ function animals(chickens, cows, pigs) {
 
 //practice doing this in arrow func. Answer below
 const animals = (chickens, cows, pigs) => chickens * 2 + cows * 4 + pigs * 4;
+
+
+function isSeven(x) {
+	return x == 7 ? true : false;
+}
+
+
+function convert(hours, minutes) {
+	hoursSec = hours * 3600
+	minutesSec = minutes * 60
+	return hoursSec + minutesSec
+}
+
+// **** Other solutions *******
+// const convert = (hours, minutes) => hours * 3600 + minutes * 60
+
+// function convert(hours, minutes) {
+// 	return (hours*3600) + (minutes*60);
+// }
+/////////////////////////////////////////////////////////////////
+
+// **** Other solutions *******
+function footballPoints(wins, draws, losses) {
+	wP = 3 * wins
+	dP = 1 * draws
+	lP = 0 * losses
+	return  wP + dP + lP
+}
+
+const footballPoints = (a,b,c)=> a*3+b;
+
+function footballPoints(wins, draws, losses) {
+	return wins*3 + draws;
+}
+/////////////////////////////////////////////////////////////////
