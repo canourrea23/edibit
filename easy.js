@@ -87,3 +87,34 @@ function footballPoints(wins, draws, losses) {
 	return wins*3 + draws;
 }
 /////////////////////////////////////////////////////////////////
+
+function addUp(num) {
+	let sum = 0 
+	for (let i = 0; i <= num; i++)
+	sum += i //needed to iterate the i not num
+	return sum
+}
+
+function sumPolygon(n) {
+	sum = 0
+	 sum = (n - 2) * 180
+	return sum 
+}
+
+function checkEquality(a, b) {
+	return (a === b) ? true : false
+}
+
+// arrow function
+
+const checkEquality = (a, b) => a === b;
+
+function cubes(a) {
+	return a ** 3
+}
+
+cubes=a=>a**3
+
+function hello() {
+	return "hello edabit.com"
+}
