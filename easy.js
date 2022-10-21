@@ -118,3 +118,60 @@ cubes=a=>a**3
 function hello() {
 	return "hello edabit.com"
 }
+
+
+function minMax(arr) {
+	var returnArr = [];
+	var min = arr[0];
+	var max = arr[0];
+	
+	for(var i = 1; i < arr.length; i++) {
+	if(arr[i] < min) {
+	min = arr[i];
+	}
+	if(arr[i] > max) {
+	max = arr[i];
+	}
+	}
+
+returnArr.push(min);
+returnArr.push(max);
+
+return returnArr;
+}
+
+
+function minMax(arr) {
+	// if len === 1
+	if (arr.length === 1) return [arr[0], arr[0]];
+  
+	//if len > 1
+	let min = Infinity,
+	  max = -Infinity;
+	//small, //largest
+	const minMaxArr = [min, max];
+				  //[1, 1]
+	for (let el of arr) {
+	  if (el > minMaxArr[1]) minMaxArr[1] = el;
+	  if (el < minMaxArr[0]) minMaxArr[0] = el;
+	}
+	// Return
+	return minMaxArr;
+  }
+
+  const matchHouses = (step) => (!step) ? 0 : step * 5 + 1 
+
+
+  function makesTen(a, b) {
+	if (a + b == 10) return true
+		if (a == 10) return true
+		if (b == 10) {
+			return true
+		} else{
+				return false
+			}
+	}
+
+	let makesTen = (a,b)=> a + b == 10 ||a == 10 || b == 10;
+
+	const makesTen = (a, b) => [a, b, a + b].includes(10);
