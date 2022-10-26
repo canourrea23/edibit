@@ -163,7 +163,7 @@ function minMax(arr) {
 
 
   function makesTen(a, b) {
-	if (a + b == 10) return true
+		if (a + b == 10) return true
 		if (a == 10) return true
 		if (b == 10) {
 			return true
@@ -175,3 +175,37 @@ function minMax(arr) {
 	let makesTen = (a,b)=> a + b == 10 ||a == 10 || b == 10;
 
 	const makesTen = (a, b) => [a, b, a + b].includes(10);
+
+	function timeForMilkAndCookies(date) {
+		console.log(date.getDate(), date.getMonth())
+		return (date.getMonth() === 11) ? true : 
+		(date.getDate() === 24) ? true : 
+			false
+	}
+
+	function timeForMilkAndCookies(date) {
+		return date.getMonth() === 11 && date.getDate() === 24
+	}
+
+	function timeForMilkAndCookies(date) {
+		return (date.getMonth() === 11 && date.getDate() === 24) ? true :	false
+	}
+	
+	function profitableGamble(prob, prize, pay) {
+		return (prob * prize - pay > 0) ? true : false
+	}
+
+
+function greeting(name) {
+	if(name == "Mubashir") {
+		return "Hello, my Love!";
+	}
+		return "Hello, " + name + "!";
+}
+
+function greeting(name) {
+if(name == "Mubashir") {
+	return "Hello, my Love!";
+}
+	return "Hello, " + name + "!";
+}
