@@ -176,24 +176,24 @@ function minMax(arr) {
 
 	const makesTen = (a, b) => [a, b, a + b].includes(10);
 
-	function timeForMilkAndCookies(date) {
-		console.log(date.getDate(), date.getMonth())
-		return (date.getMonth() === 11) ? true : 
-		(date.getDate() === 24) ? true : 
-			false
-	}
+function timeForMilkAndCookies(date) {
+	console.log(date.getDate(), date.getMonth())
+	return (date.getMonth() === 11) ? true : 
+	(date.getDate() === 24) ? true : 
+		false
+}
 
-	function timeForMilkAndCookies(date) {
-		return date.getMonth() === 11 && date.getDate() === 24
-	}
+function timeForMilkAndCookies(date) {
+	return date.getMonth() === 11 && date.getDate() === 24
+}
 
-	function timeForMilkAndCookies(date) {
-		return (date.getMonth() === 11 && date.getDate() === 24) ? true :	false
-	}
-	
-	function profitableGamble(prob, prize, pay) {
-		return (prob * prize - pay > 0) ? true : false
-	}
+function timeForMilkAndCookies(date) {
+	return (date.getMonth() === 11 && date.getDate() === 24) ? true :	false
+}
+
+function profitableGamble(prob, prize, pay) {
+	return (prob * prize - pay > 0) ? true : false
+}
 
 
 function greeting(name) {
@@ -204,8 +204,46 @@ function greeting(name) {
 }
 
 function greeting(name) {
-if(name == "Mubashir") {
-	return "Hello, my Love!";
-}
 	return "Hello, " + name + "!";
+	if(name == "Mubashir") {
+		return "Hello, my Love!";
+	}
 }
+
+Const greeting = (name) => name === “mash” ? `hello, my love` : `hello ${name}`
+
+const imposterFormula = (i, p) => {
+	let imposter = Math.round(100*(i/p))
+	return `${imposter}%`
+}
+
+const imposterFormula1 = (i,p) => `${Math.round(100*(i/p))}%`
+
+const imposterFormula1 = (i,p) => `Math.round(100*(i/p))${%}`
+
+
+function whichIsLarger(f, g) {
+	return f() > g() ? "f" : f() < g() ? "g" : "neither";
+}
+
+function canNest(arr1, arr2) {
+	let firstMax = Math.max(...arr1);
+	let secondMax = Math.max(...arr2);
+
+	let firstMin = Math.min(...arr1);
+	let secondMin = Math.min(...arr2);
+		
+		console.log(firstMin, secondMin, firstMax, secondMax)
+	if ((firstMax < secondMax) && (firstMin > secondMin)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+// canNest([1, 2, 3, 4], [0, 6]) ➞ true
+
+// canNest([3, 1], [4, 0]) ➞ true
+
+// canNest([9, 9, 8], [8, 9]) ➞ false
+
+// canNest([1, 2, 3, 4], [2, 3]) ➞ false
